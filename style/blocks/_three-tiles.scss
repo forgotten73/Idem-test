@@ -1,0 +1,46 @@
+.three-tiles {
+    display: flex;
+    margin: 0 -3px;
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 3);
+    }
+
+    &__item {
+        line-height: 20px;
+        padding: 10px;
+        background-color: $cl-mischka;
+        margin: 0 3px 6px;
+        height: 50%;
+        color: $cl-white;
+        &--big {
+            font-size: 18px;
+            line-height: 26px;
+            width: calc(100% / 1.5 - 3px);
+            padding: 20px 3px 0px 10px;
+            text-align: center;
+            height: calc(100vw * 212 / 320);
+            max-height: 492px;
+            overflow-y: auto;
+            P {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @media (min-width: 480px) {
+        margin: 0 -5px;
+        order: -1;
+
+        &__item {
+            margin: 0 5px 10px;
+
+            &--big {
+                width: calc(100% / 1.5 - 10px);
+                height: calc(100vw * 212 / 320);
+            }
+        }
+    }
+}

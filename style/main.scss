@@ -4,6 +4,12 @@
 @import 'blocks/header';
 @import 'blocks/footer';
 @import 'blocks/title';
+@import 'blocks/five-tiles';
+@import 'blocks/three-tiles';
+
+* {
+    box-sizing: border-box;
+}
 
 html, body {
     height: 100%;
@@ -27,6 +33,10 @@ h6 {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
 .page-wrapper {
     position: relative;
     display: flex;
@@ -42,4 +52,9 @@ h6 {
 .main {
     flex: 1 0 auto;
     padding: 10px 0;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
 }
