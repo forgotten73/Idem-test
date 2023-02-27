@@ -1,0 +1,8 @@
+.user-message {
+    display: flex;
+    margin-bottom: 20px;
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+}

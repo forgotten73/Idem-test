@@ -1,0 +1,27 @@
+.textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 0;
+
+    &__field {
+        font-family: $font-text;
+        font-size: 14px;
+        line-height: 19px;
+        width: 100%;
+        color: #696969;
+        border: 1px solid $cl-gainsboro;
+        border-radius: 4px;
+        resize: none;
+        padding: 10px;
+        height: 129px;
+
+        -webkit-appearance: none;
+        -moz-appearance:    none;
+        appearance:         none;
+
+        &:focus-visible,
+        &:focus {
+            outline: none;
+        }
+    }
+}

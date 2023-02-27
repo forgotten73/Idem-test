@@ -71,6 +71,44 @@ p {
           justify-content: center;
 }
 
+.textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 0;
+}
+.textarea__field {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 19px;
+  width: 100%;
+  color: #696969;
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  resize: none;
+  padding: 10px;
+  height: 129px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.textarea__field:focus-visible, .textarea__field:focus {
+  outline: none;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 23px;
+  padding: 9px 22px;
+  min-width: 144px;
+  border-radius: 21px;
+  -webkit-box-shadow: 0px 4px 6px rgba(15, 84, 185, 0.3);
+          box-shadow: 0px 4px 6px rgba(15, 84, 185, 0.3);
+  background-color: #0F54B9;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
 .page-wrapper {
   position: relative;
   display: -webkit-box;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,78 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="page-wrapper">
+        <div class="dialog">
+            <img class="dialog__image-bg" src="/images/dialog-bg.jpg" alt="Фоновая картинка с лесом и горами" width="651" height="757">
+            <img class="dialog__image-bg dialog__image-bg--blur" src="/images/dialog-bg.jpg" alt="Фоновая картинка с лесом и горами" width="651" height="757">
+            <div class="dialog__wrapper">
+                <div class="message-history">
+                    <div class="user-message">
+                        <a class="user-logo" href="javascript:void(0);" title="Аватар пользователя">
+                            <img src="/images/user.png" alt="Аватар пользователя" class="user-logo__image" width="45" height="43">
+                        </a>
+                        <div class="message-field">
+                            <p>
+                                Это означает, что в Вашем доме, офисе, кабинете, мастерской хранятся ценности бóльшие, чем просто деньги или драгоценности, - культурные ценности. Произведения искусства, антиквариат, иные предметы коллекционирования – все это имущество, безусловно высокая стоимость которого. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="user-message user-message--reverse">
+                        <a class="user-logo" href="javascript:void(0);" title="Аватар пользователя">
+                            <img src="/images/user.png" alt="Аватар пользователя" class="user-logo__image" width="45" height="43">
+                        </a>
+                        <div class="message-field message-field--reverse">
+                            <p>
+                                Это означает,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="user-message">
+                        <a class="user-logo" href="javascript:void(0);" title="Аватар пользователя">
+                            <img src="/images/user.png" alt="Аватар пользователя" class="user-logo__image" width="45" height="43">
+                        </a>
+                        <div class="message-field">
+                            <p>
+                                доме, офисе, кабинете, мастерской 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="date-history">
+                    <span>
+                        21 октября 2017
+                    </span>
+                </div>
+                <div class="message-history">
+                    <div class="user-message user-message--reverse">
+                        <a class="user-logo" href="javascript:void(0);" title="Аватар пользователя">
+                            <img src="/images/user.png" alt="Аватар пользователя" class="user-logo__image" width="45" height="43">
+                        </a>
+                        <div class="message-field message-field--reverse">
+                            <p>
+                                Это означает, 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="user-message">
+                        <a class="user-logo" href="javascript:void(0);" title="Аватар пользователя">
+                            <img src="/images/user.png" alt="Аватар пользователя" class="user-logo__image" width="45" height="43">
+                        </a>
+                        <div class="message-field">
+                            <p>
+                                Это означает,
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="actions-dialog" action="/" method="post">
+                <div class="textarea">
+                    <textarea class="textarea__field" name="user-message" id="user-message" autocomplete="off" placeholder="Напишите сообщение"></textarea>
+                </div>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,32 @@
+.date-history {
+    position: relative;
+    font-size: 14px;
+    line-height: 24px;
+    color: $cl-black;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 16px;
+
+    span {
+        position: relative;
+        padding: 0 28px 0 15px;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            top: 11px;
+            width: 100vw;
+            height: 1px;
+            background-color: $cl-gainsboro;
+        }
+
+        &::after {
+            left: 100%;
+        }
+
+        &::before {
+            right: 100%;
+        }
+    }
+}

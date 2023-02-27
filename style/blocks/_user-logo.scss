@@ -1,0 +1,18 @@
+.user-logo {
+    width: 47px;
+    height: 47px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 18px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .user-message--reverse & {
+        margin-right: 0;
+        margin-left: 18px;
+    }
+}
