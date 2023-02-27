@@ -87,6 +87,7 @@ p {
   resize: none;
   padding: 10px;
   height: 129px;
+  -ms-overflow-style: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -98,6 +99,7 @@ p {
 .button {
   font-size: 16px;
   line-height: 23px;
+  font-weight: bold;
   padding: 9px 22px;
   min-width: 144px;
   border-radius: 21px;
@@ -107,6 +109,7 @@ p {
   border: none;
   color: #fff;
   cursor: pointer;
+  outline: none;
 }
 
 .page-wrapper {

@@ -1,6 +1,7 @@
 .button {
     font-size: 16px;
     line-height: 23px;
+    font-weight: bold;
     padding: 9px 22px;
     min-width: 144px;
     border-radius: 21px;
@@ -9,4 +10,5 @@
     border: none;
     color: $cl-white;
     cursor: pointer;
+    outline: none;
 }

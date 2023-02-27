@@ -87,6 +87,7 @@ p {
   resize: none;
   padding: 10px;
   height: 129px;
+  -ms-overflow-style: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -98,6 +99,7 @@ p {
 .button {
   font-size: 16px;
   line-height: 23px;
+  font-weight: bold;
   padding: 9px 22px;
   min-width: 144px;
   border-radius: 21px;
@@ -107,6 +109,7 @@ p {
   border: none;
   color: #fff;
   cursor: pointer;
+  outline: none;
 }
 
 .page-wrapper {
@@ -168,10 +171,25 @@ p {
 }
 
 .dialog {
+  padding: 20px 0 40px;
+  max-height: 100vh;
+  max-height: calc(var(--vh) * 100);
+  min-height: 550px;
+  height: 100%;
+}
+.dialog__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   max-width: 651px;
   width: 100%;
-  margin: 50px auto;
+  height: 100%;
+  margin: 0 auto;
 }
 .dialog__image-bg {
   position: absolute;
@@ -191,9 +209,16 @@ p {
 .dialog__wrapper {
   padding: 41px 19px 9px 15px;
   max-height: 517px;
+  min-height: 250px;
   overflow-y: auto;
   overflow-x: hidden;
   border-bottom: 1px solid #DBDBDB;
+}
+@media (min-width: 768px) {
+  .dialog {
+    padding: 46px 0 80px;
+    min-height: 620px;
+  }
 }
 
 .user-logo {
