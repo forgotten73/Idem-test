@@ -28,13 +28,6 @@
         max-width: 250px;
         span {
             padding-right: 5px;
-            // &::after {
-            //     content: '';
-            //     height: 100%;
-            //     width: 5px;
-            //     display: inline-block;
-            //     font-size: 0;
-            // }
         }
     }
 
@@ -43,7 +36,6 @@
         max-width: 140px;
         span {
             padding-left: 5px;
-            direction: rtl;
         }
     }
 

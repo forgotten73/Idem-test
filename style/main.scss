@@ -1,12 +1,5 @@
 @import 'partials/fonts';
 @import 'partials/variables';
-@import 'blocks/container';
-@import 'blocks/header';
-@import 'blocks/footer';
-@import 'blocks/title';
-@import 'blocks/five-tiles';
-@import 'blocks/three-tiles';
-@import 'blocks/user-info';
 
 * {
     box-sizing: border-box;
@@ -38,6 +31,10 @@ p {
     margin: 0;
 }
 
+@import 'blocks/container';
+@import 'blocks/header';
+@import 'blocks/footer';
+
 .page-wrapper {
     position: relative;
     display: flex;
@@ -52,7 +49,6 @@ p {
 
 .main {
     flex: 1 0 auto;
-    padding: 10px 0 0;
 }
 
 .main-page {
