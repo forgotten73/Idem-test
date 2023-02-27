@@ -6,6 +6,7 @@
 @import 'blocks/title';
 @import 'blocks/five-tiles';
 @import 'blocks/three-tiles';
+@import 'blocks/user-info';
 
 * {
     box-sizing: border-box;
@@ -51,10 +52,31 @@ p {
 
 .main {
     flex: 1 0 auto;
-    padding: 10px 0;
+    padding: 10px 0 0;
 }
 
 .main-page {
     display: flex;
     flex-direction: column;
+}
+
+.attention-mark {
+    font-size: 36px;
+    line-height: 42px;
+    color: $cl-wild-watermelon;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 61px;
+    height: 61px;
+    text-align: center;
+    background-color: $cl-white;
+    border-radius: 50%;
+    padding: 11px 0 7px;
+    opacity: 0;
+    transition: opacity .4s ease;
+    z-index: 3;
+    pointer-events: none;
 }
